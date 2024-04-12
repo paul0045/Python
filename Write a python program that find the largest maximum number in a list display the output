@@ -1,0 +1,15 @@
+def find_largest_max(numbers):
+    if not numbers:
+        return None
+
+    largest_max = max(numbers)
+    return largest_max
+
+if __name__ == "__main__":
+    numbers = [int(x) for x in input("Enter a list of numbers separated by space: ").split()]
+
+    largest_max = find_largest_max(numbers)
+    if largest_max is not None:
+        print("The largest maximum number in the list is:", largest_max)
+    else:
+        print("The list is empty.")
