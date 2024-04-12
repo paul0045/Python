@@ -1,0 +1,18 @@
+def calculate_exponential(base, exponent):
+    result = base ** exponent
+    exponential_form = f"{base}^{exponent}"
+    return result, exponential_form
+
+if __name__ == "__main__":
+    base = float(input("Enter the base value: "))
+    exponent = float(input("Enter the exponent value: "))
+
+    # Method 1: Using the power operator (**)
+    result1, exponential_form1 = calculate_exponential(base, exponent)
+    print(f"Method 1: Exponential form: {exponential_form1}, Result: {result1}")
+
+    # Method 2: Using the math module
+    import math
+    result2 = math.pow(base, exponent)
+    exponential_form2 = f"{base}^{exponent}"
+    print(f"Method 2:
