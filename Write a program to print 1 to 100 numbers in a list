@@ -1,0 +1,5 @@
+# Generate a list containing numbers from 1 to 100
+numbers_list = list(range(1, 101))
+
+# Print the list
+print(numbers_list)
