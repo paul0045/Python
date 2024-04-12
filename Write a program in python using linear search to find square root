@@ -1,0 +1,16 @@
+def linear_search_square_root(n):
+    if n < 0:
+        return "Square root of a negative number is not real."
+
+    for i in range(n + 1):
+        if i * i == n:
+            return i
+        elif i * i > n:
+            return f"Square root of {n} is between {i - 1} and {i}."
+
+    return f"Square root of {n} is between {n - 1} and {n}."
+
+if __name__ == "__main__":
+    num = int(input("Enter a number: "))
+    result = linear_search_square_root(num)
+    print(result)
