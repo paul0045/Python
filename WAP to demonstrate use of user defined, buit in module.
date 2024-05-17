@@ -1,0 +1,27 @@
+# main.py
+
+# Import user-defined module
+import math_utils
+
+# Import built-in module
+import math
+
+def main():
+    # Using user-defined module
+    a = 10
+    b = 5
+
+    print("Using user-defined module 'math_utils':")
+    print(f"{a} + {b} = {math_utils.add(a, b)}")
+    print(f"{a} - {b} = {math_utils.subtract(a, b)}")
+    print(f"{a} * {b} = {math_utils.multiply(a, b)}")
+    print(f"{a} / {b} = {math_utils.divide(a, b)}")
+
+    # Using built-in module 'math'
+    print("\nUsing built-in module 'math':")
+    print(f"Square root of {a} = {math.sqrt(a)}")
+    print(f"{a} raised to the power of {b} = {math.pow(a, b)}")
+    print(f"Cosine of {a} (in radians) = {math.cos(math.radians(a))}")
+
+if __name__ == "__main__":
+    main()
