@@ -1,0 +1,29 @@
+# Integers
+x = 10
+y = -5
+z = 0
+print("Integers:", x, y, z)
+
+# Floating-point numbers
+a = 3.14
+b = -0.5
+c = 2.0e3  # 2.0 * 10^3
+print("Floating-point numbers:", a, b, c)
+
+# Complex numbers
+p = 2 + 3j
+q = -1j
+print("Complex numbers:", p, q)
+
+# Arithmetic operations
+# Addition
+result_add = x + a
+# Subtraction
+result_sub = y - b
+# Multiplication
+result_mul = z * c
+# Division
+result_div = a / x
+# Exponentiation
+result_exp = x ** 2
+print("Arithmetic operations:", result_add, result_sub, result_mul, result_div, result_exp)
