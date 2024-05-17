@@ -1,0 +1,30 @@
+# Create a dictionary with tuples as keys
+dict_of_tuples = {
+    (1, 2): "a",
+    (3, 4): "b",
+    (5, 6): "c"
+}
+
+# Print the dictionary
+print("Original dictionary:", dict_of_tuples)
+
+# Access values using tuple keys
+print("Value for key (1, 2):", dict_of_tuples[(1, 2)])
+print("Value for key (3, 4):", dict_of_tuples[(3, 4)])
+
+# Add a new key-value pair
+dict_of_tuples[(7, 8)] = "d"
+print("Dictionary after adding (7, 8):", dict_of_tuples)
+
+# Update an existing key-value pair
+dict_of_tuples[(1, 2)] = "updated"
+print("Dictionary after updating (1, 2):", dict_of_tuples)
+
+# Remove a key-value pair
+del dict_of_tuples[(5, 6)]
+print("Dictionary after deleting (5, 6):", dict_of_tuples)
+
+# Iterate over the dictionary
+print("Iterating over the dictionary:")
+for key, value in dict_of_tuples.items():
+    print(f"Key: {key}, Value: {value}")
